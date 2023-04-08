@@ -1,0 +1,40 @@
+:root {
+  --pink: #f3b8ab;
+  --greyish: #b0b9b9;
+  --dark: #322f2a;
+  --grad-light: #f8c0a6;
+  --grad-dark: #f29b7d;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.section {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.first {
+  background: rgb(242, 155, 125);
+  background: linear-gradient(
+    321deg,
+    rgba(242, 155, 125, 1) 0%,
+    rgba(248, 192, 166, 1) 44%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.second {
+  background-color: var(--pink);
+}
+
+.third {
+  background-color: var(--greyish);
+}
