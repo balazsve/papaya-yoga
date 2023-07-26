@@ -17,34 +17,69 @@ body {
   padding: 0;
   margin: 0;
 }
-.nav {
-  display: flex;
-  padding: 0px 10px 0px 10px;
-  justify-content: space-between;
-  margin: 0px 50px 50px 50px;
+
+/* nav styles */
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
 }
 
-.navitem {
-  font-size: 30px;
-  color: var(--dark);
-  text-decoration: none;
-}
-
-h1 {
-  text-decoration: none;
-  display: inline;
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #ff9776;
 }
 
 .nav-links {
-  display: flex;
-
-  justify-content: space-between;
-  width: 400px;
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #ff9776;
+  display: none;
+  margin: 0;
 }
 
-.link {
-  margin: 0px 10px 0px 10px;
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
+
+.nav-links a:hover,
+a:focus {
+  background-color: #ff9776;
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+/* nav styles  end*/
 
 .section {
   display: flex;
