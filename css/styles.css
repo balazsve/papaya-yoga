@@ -12,6 +12,7 @@ body {
   padding: 0;
   height: 100%;
   font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
 }
 
 * {
@@ -22,20 +23,33 @@ body {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 h1 {
   font-family: "Cormorant", serif;
   text-transform: uppercase;
+  font-size: 2rem;
 }
 
 p {
   font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
 }
 
 nav {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1;
 }
 
 .nav-links a:hover,
@@ -43,28 +57,33 @@ a:focus {
   background-color: #ff9776;
 }
 
+.nav-links a:active {
+  background-color: white;
+}
+
 .section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  flex-direction: column;
+  padding: 3rem 3rem 3rem 0;
   margin: 0 auto 3rem auto;
 
   max-width: 1200px;
   border-radius: 0 500px 500px 0;
+  gap: 10px;
 }
 
 .first {
   background-color: #ff9776;
-  display: flex;
 }
 
 .second {
-  background-color: var(--pink);
+  border: 2px solid #ff9776;
 }
 
 .third {
-  background-color: var(--greyish);
+  background-color: #ff9776;
 }
 
 .footer {
@@ -75,21 +94,32 @@ a:focus {
 
 .subcontainer {
   flex-direction: column;
+  padding-left: 3rem;
 }
 
 .featureimg {
-  flex-grow: 3;
-  min-height: 300px;
-  min-width: 300px;
-  max-width: 600px;
-  max-height: 600px;
+  width: 100%;
+  max-width: 500px;
+  padding-left: 3rem;
 }
 
 .large-nav-link {
   color: black;
 }
 
-@media screen and (min-width: 700px) {
+.nav-logo {
+  max-width: 3rem;
+}
+
+.logo-text {
+  font-size: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+@media (min-width: 700px) {
   .section {
     border-radius: 500px;
   }
