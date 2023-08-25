@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Papaya Yoga</title>
+    <meta name="description" content="Papaya Yoga" />
+    <meta name="keywords" content="Yoga" />
+
+    <meta property="og:title" content="Papaya Yoga" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://balazsve.github.io/papaya-yoga/" />
+    <meta
+      property="og:image"
+      content="https://balazsve.github.io/papaya-yoga/images/og-main.webp"
+    />
+
+    <meta name="robots" content="noindex, nofollow" />
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -22,22 +35,22 @@
   </head>
   <body>
     <nav>
-      <div class="flex">
+      <div class="nav-nameandlogo">
         <img src="apple-touch-icon.png" alt="" class="nav-logo" />
         <h1 class="logo-text">Papaya Yoga</h1>
       </div>
 
       <div class="nav-links">
-        <a href="#section-1" class="large-nav-link">Rólam</a>
-        <a href="#section-2" class="large-nav-link">Foglalás</a>
-        <a href="#section-3" class="large-nav-link">Kapcsolat</a>
+        <a href="#rolam" class="nav-link">Rólam</a>
+        <a href="#foglalas" class="nav-link">Foglalás</a>
+        <a href="#kapcsolat" class="nav-link">Kapcsolat</a>
       </div>
     </nav>
 
-    <div id="section-1" class="section first">
+    <div id="rolam" class="section first">
       <div class="subcontainer">
         <h1>Rólam</h1>
-        <p>
+        <p class="p--section">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et placeat
           obcaecati fugiat amet praesentium aut corporis repudiandae quas illo
           mollitia numquam, in quibusdam nobis ab earum minus totam eius
@@ -47,23 +60,29 @@
       <img src="images/1x600.webp" alt="" srcset="" class="featureimg" />
     </div>
 
-    <div id="section-2" class="section second">
+    <div id="foglalas" class="section second">
       <div class="subcontainer">
         <h1>Foglalás</h1>
-        <p>
+        <p class="p--section">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et placeat
           obcaecati fugiat amet praesentium aut corporis repudiandae quas illo
           mollitia numquam, in quibusdam nobis ab earum minus totam eius
           reprehenderit!
         </p>
+
+        <a
+          href="https://papaya-yoga.reservio.com/events"
+          class="reservio-button"
+          >Reservio</a
+        >
       </div>
       <img src="images/2x600.webp" alt="" srcset="" class="featureimg" />
     </div>
 
-    <div id="section-3" class="section third">
+    <div id="kapcsolat" class="section third">
       <div class="subcontainer">
         <h1>Kapcsolat</h1>
-        <p>
+        <p class="p--section">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et placeat
           obcaecati fugiat amet praesentium aut corporis repudiandae quas illo
           mollitia numquam, in quibusdam nobis ab earum minus totam eius
@@ -73,7 +92,13 @@
       <img src="images/3x600.webp" alt="" srcset="" class="featureimg" />
     </div>
 
-    <footer class="footer">facebook intstagram patreon</footer>
-    <script src="js/script.js"></script>
+    <footer class="footer">
+      <a href="https://www.facebook.com/papayayogi"
+        ><img src="images/facebook-p.png" alt="" srcset="" class="social-logo"
+      /></a>
+      <a href="https://www.instagram.com/papaya__yoga/"
+        ><img src="images/instagram-p.png" alt="" srcset="" class="social-logo"
+      /></a>
+    </footer>
   </body>
 </html>
