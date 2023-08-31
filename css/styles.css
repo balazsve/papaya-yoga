@@ -59,10 +59,6 @@ nav {
   justify-content: space-between;
 }
 
-.nav-link:hover {
-  background-color: var(--main-color);
-}
-
 .nav-link {
   text-decoration: none;
   border-radius: 1rem;
@@ -154,5 +150,11 @@ nav {
   }
 
   .subcontainer {
+  }
+}
+
+@media (hover: hover) {
+  .nav-link:hover {
+    background-color: var(--main-color); /* solves sticky problem */
   }
 }
